@@ -1,0 +1,50 @@
+/* APICV
+
+   Hoja de estilo para Reuniones materiales APICV
+
+   9 de abril de 2017
+*/
+
+html {
+  font-family: sans-serif;
+  background-color: #FFFFFF;
+  text-align: justify;
+}
+
+/* Menu  */
+
+/* Pantallas pequeÃ±as */
+@media screen and (max-width: 768px) {
+  html { margin-left: 2em; margin-right: 2em; }
+  nav {
+    position: absolute; top: 0; left: 0;
+    font-size: 80%; padding-left: 0.2em; text-align: left; width: 6em; }
+  nav h2, div.nav h2 { display: none; }
+  nav p, div.nav p { font-size: 350%; margin: 5px 0 0; }
+  nav a, div.nav a { text-decoration: none; color: black; }
+  nav i, div.nav i { display: none; }
+  nav i.icon-html5, div.nav i.icon-html5 { display: block; }
+  nav div.toc, div.nav div.toc { display: none; }
+}
+
+/* Pantallas grandes */
+@media screen and (min-width: 768px) {
+  html { margin-left: 12em; margin-right: 4em; }
+  nav, div.nav {
+    position: fixed; top: 0; left: 0;
+    font-size: 80%; padding-left: 0.2em; text-align: left; width: 14.5em; }
+  nav h2, div.nav h2 { font-size: 110%; text-align: left; margin: 0; padding: 0; }
+  nav p, div.nav p{ font-size: 350%; margin: 5px 0 0; }
+  nav a , div.nav a{ text-decoration: none; color: black; }
+  nav i.actual, div.nav i.actual { color: green; }
+  nav ul, div.nav ul { padding-left: 1em; margin-top: 0}
+  nav ul li, div.nav ul li { margin: 0 0 0.1em; }
+  nav ul ul, div.nav ul ul { padding-left: 0.5em; margin: 0; }
+  nav ul ul li, div.nav ul ul li { margin: 0; }
+}
+
+@media print {
+  html { margin-left: 5px; margin-right: 0; margin-top: 0; }
+  div#menu { display: none; }
+  nav { display: none }
+}
